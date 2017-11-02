@@ -1,0 +1,3 @@
+// the configured options and settings for Tutorial
+#define CppTraining_VERSION_MAJOR @CppTraining_VERSION_MAJOR@
+#define CppTraining_VERSION_MINOR @CppTraining_VERSION_MINOR@
