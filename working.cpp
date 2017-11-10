@@ -1,43 +1,16 @@
 
 #include <cstdio>
-
+#include <string>
 using namespace std;
 
 int main(int argc, char **argv) {
 
-    int x = 7;
-    int *ip = &x;
-    int &y = x;
+    int a[] = { 1, 2, 3, 4, 5 };
+    string s = "string";
 
-    printf("The value of x is %d\n", x);
-    printf("The value of y is %d\n", y);
-    printf("The value of *ip is %d\n", *ip);
-
-    x = 42;
-    printf("\nThe value of x is %d\n", x);
-    printf("The value of y is %d\n", y);
-    printf("The value of *ip is %d\n", *ip);
-
-
-    y = 43;
-    printf("\nThe value of x is %d\n", x);
-    printf("The value of y is %d\n", y);
-    printf("The value of *ip is %d\n", *ip);
-
-    int z = 149;
-    ip = &z;
-    printf("\nThe value of x is %d\n", x);
-    printf("The value of y is %d\n", y);
-    printf("The value of *ip is %d\n", *ip);
-
-    y = z;
-    printf("\nThe value of x is %d\n", x);
-    printf("The value of y is %d\n", y);
-    printf("The value of *ip is %d\n", *ip);
-    printf("The value of z is %d\n", z);
-
-
-
+    for(char c : s ) {
+        printf ("element is: %c\n", c);
+    }
     return 0;
 }
 

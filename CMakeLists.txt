@@ -4,7 +4,7 @@ project (CppTraining)
 # The version number.
 set (CppTraining_VERSION_MAJOR 1)
 set (CppTraining_VERSION_MINOR 0)
- 
+
 # configure a header file to pass some of the CMake settings
 # to the source code
 configure_file (
@@ -16,4 +16,7 @@ configure_file (
 # so that we will find TutorialConfig.h
 include_directories("${PROJECT_BINARY_DIR}")
 
-add_executable(CppTraining working.cpp)
+set(CMAKE_CXX_FLAGS "-std=gnu++11 ${CMAKE_CXX_FLAGS}")
+
+add_executable(working working.cpp)
+add_executable(func func.cpp)
